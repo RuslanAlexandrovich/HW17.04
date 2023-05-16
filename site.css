@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    background-color: lightgrey;
+    }
+    
+    .header { 
+        grid-area: 1 / 1 / 2 / 11; 
+        background-color: black;
+        display: inline-flex;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+    }
+    ul{
+        display: inline-flex;
+        list-style-type: none;
+        width: 900px;
+        justify-content: space-between;
+        font-size: 30px;
+        padding-left: 50px;
+        align-items: center;
+        color: white;
+    }
+    li{
+        font-size: 20px;
+    }
+    .body { 
+        grid-area: 2 / 1 / 9 / 8;
+        margin-left: 50px;
+        background-color: white;
+        max-width: 100%;
+    }
+    img{
+        width: 100%;
+        margin-top: 10px;
+    }
+    p{
+        padding: 10px 20px;
+    }
+    h2{
+        margin: 10px 10px;
+    }
+    span{
+        margin: 10px;
+        color: gray;
+    }
+    .rightasaid { 
+        background-color: white;
+        grid-area: 2 / 8 / 7 / 11;
+        max-width: 100%;
+        margin-right: 50px;
+        display: block; 
+    }
+    .asaidmenu{
+        display: block;
+        color: black;
+        max-width: 100%;
+        padding: 0 0;
+        
+    }
+    .asaidmenu li{
+        font-size: 16px;
+        margin: 30px 5px;
+        background-repeat: no-repeat;
+        background-position: left;
+        padding-left: 40px;
+        background-size: 35px;
+        
+    }
+    .asaidmenu li:nth-child(1){
+        background-image: url(img/calendar_7.png);
+    }
+    .asaidmenu li:nth-child(2){
+        background-image: url(img/calendar_19.png);
+    }
+    .asaidmenu li:nth-child(3){
+        background-image: url(img/calendar_27.png);
+    }
+    .asaidmenu li:nth-child(4){
+        background-image: url(img/calendar_7.png);
+    }
+    .asaidmenu li:nth-child(5){
+        background-image: url(img/calendar_19.png);
+    }
+    .asaidmenu li:nth-child(6){
+        background-image: url(img/calendar_27.png);
+    }
+    .rightasaid2 { 
+        grid-area: 7 / 8 / 9 / 11; 
+        display: flex;
+        background-color: white;
+        margin-right: 50px;
+        height: 60%;
+
+    }

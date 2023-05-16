@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+}
+.container{
+    width: 100vw;
+    height: 100%;
+    margin: 0, auto;
+    display: flex;
+    /* justify-content: space-around; */
+    position: relative;
+}
+.menu{
+    display: flex;
+    position: absolute;
+    left: 10px;
+}
+.menu ul{
+    list-style-type: none;
+}
+
+.menu a{
+    display: flex;
+    padding: 30px 120px;
+    text-decoration: none;
+    color: black;  
+    font-size: 20px;
+    background-color: rgb(216, 216, 216); 
+}
+a:hover{
+    background-color: gray;
+}
+
+.n1{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    min-height: 450px;
+    background-color: rgb(216, 216, 216);
+    padding-top: 25px;
+    margin: 0 5px;
+}
+img{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.text{
+    padding: 20px 25px;
+}
+h2{
+    padding-top: 20px;
+    padding-left: 25px;
+}
+.page1{
+    display: flex;
+    position: absolute;
+    left: 300px;
+    opacity: 0;
+    visibility: hidden;
+
+}
+/* .page2{
+    display: flex;
+    position: absolute;
+    left: 300px;
+    opacity: 0;
+    visibility: hidden;
+}
+.page3{
+    display: flex;
+    position: absolute;
+    left: 300px;
+    opacity: 0;
+    visibility: hidden;
+} */
+
+.page1:target{
+    display: flex;
+    position: absolute;
+    left: 300px;
+    opacity: 1;
+    visibility: visible;
+}
+.page2:target{
+    display: flex;
+    position: absolute;
+    left: 300px;
+    opacity: 1;
+    visibility: visible;
+}
+.page3:target{
+    display: flex;
+    position: absolute;
+    left: 300px;
+    opacity: 1;
+    visibility: visible;
+}
+/* .page2:target::before .page1{
+    opacity: 0;
+    visibility: hidden;
+} */
